@@ -1,0 +1,214 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+body {
+  background-color: #f4f6f9;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 400px;
+  margin: 40px auto; /* center horizontally */
+}
+
+.small-card {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.my-businesses .card {
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+.payment-form input {
+  width: 100%;
+}
+.payment-form button {
+  width: 100%;
+}
+
+
+.dashboard-container {
+  display: flex;
+  height: 100vh; /* full viewport */
+}
+
+.dashboard-container .dashboard-main {
+  flex: 1; /* occupy remaining space */
+  margin-left: 220px; /* width ya sidebar */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar {
+  width: 220px; /* unaweza kuongeza hadi 240px kama maneno marefu */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #1e3c72;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  flex: 1;
+}
+
+.menu li {
+  padding: 15px 20px; /* ongeza padding ya vertical */
+  display: flex;
+  align-items: center; /* hii inaflata icon + text sawa */
+  gap: 15px; /* spacing kati ya icon na text */
+  cursor: pointer;
+  font-size: 16px; /* readable */
+}
+
+.menu li:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.menu-icon {
+  font-size: 18px; /* icons sio ndogo sana */
+}
+
+.menu-link span {
+  color: white;  /* hii inafanya maneno yote ya sidebar kuwa white */
+}
+  
+
+.header {
+  height: 70px; /* ongeza height kidogo */
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* hii inasukuma items mbali mbali */
+  padding: 0 30px;
+  flex-shrink: 0;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space kati ya username na button */
+}
+
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kwa mstari */
+  gap: 20px; /* space kati ya cards */
+  max-width: 900px;  /* cards ziko kubwa sasa */
+  margin: 40px auto; /* center horizontally */
+  padding: 0 20px;
+}
+
+.small-card {
+  background: white;
+  padding: 25px; /* kubwa kidogo */
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.small-card span {
+  font-size: 16px;
+  color: #333;
+}
+
+.small-card h6 {
+  margin-top: 10px;
+  font-size: 22px; /* kubwa kidogo */
+  font-weight: bold;
+  color: #000;
+}
+
