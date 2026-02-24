@@ -37,7 +37,7 @@ const Sidebar = () => {
           </Link>
         </li>
 
-        <li className={location.pathname === "/dashboard/reports" ? "active" : ""}>
+        {/*<li className={location.pathname === "/dashboard/reports" ? "active" : ""}>
           <Link to="/dashboard/reports" className="menu-link">
             <FaChartBar /> <span>Reports</span>
           </Link>
@@ -47,7 +47,7 @@ const Sidebar = () => {
           <Link to="/dashboard/settings" className="menu-link">
             <FaCog /> <span>Settings</span>
           </Link>
-        </li>
+        </li>*/}
       </ul>
     </div>
   );
