@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getusers, createuser, updateuser, deleteuser, createbusiness } from "../api/api";
-import "./Users.css";
+import "./users.css";
 import { useNavigate } from "react-router-dom";
 
 
