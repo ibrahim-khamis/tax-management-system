@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-7@qpausk1&m_hubwkqy87srrk=uy6rvtz39e*1z&@bxv%rwe^0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tax-management-system-cuoz.onrender.com']
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
 ]
@@ -96,6 +96,10 @@ WSGI_APPLICATION = 'TaxPayProject.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = { "default": dj_database_url.config(default=os.environ.get("DATABASE_URL")) }
+# settings.py
+CSRF_TRUSTED_ORIGINS = [
+    'tax-management-system-cuoz.onrender.com',
+]
 
 
 
