@@ -31,7 +31,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
 ]
 
-CSRF_TRUSTED_ORIGINS = [ f"https://{os.environ.get('RENDER_EXTERNAL_HOSTNAME')}" ] if os.environ.get('RENDER_EXTERNAL_HOSTNAME') else []
+
 
 
  # Your frontend's local development URL
