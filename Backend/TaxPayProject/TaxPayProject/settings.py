@@ -102,7 +102,7 @@ WSGI_APPLICATION = 'TaxPayProject.wsgi.application'
 DATABASES = { "default": dj_database_url.config(default=os.environ.get("DATABASE_URL")) }
 # settings.py
 CSRF_TRUSTED_ORIGINS = [
-    'tax-management-system-cuoz.onrender.com',
+    'https://tax-management-system-cuoz.onrender.com',
 ]
 
 
