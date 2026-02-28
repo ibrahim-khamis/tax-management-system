@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-7@qpausk1&m_hubwkqy87srrk=uy6rvtz39e*1z&@bxv%rwe^0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tax-management-system-cuoz.onrender.com']
+ALLOWED_HOSTS = ['https://tax-management-system-34cb.onrender.com']
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
 ]
