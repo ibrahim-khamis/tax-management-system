@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://tax-management-system-cuoz.onrender.com/api/',
+    baseURL: 'https://tax-management-system-34cb.onrender.com/api/',
     headers: {
         'Content-Type': 'application/json',
     },
