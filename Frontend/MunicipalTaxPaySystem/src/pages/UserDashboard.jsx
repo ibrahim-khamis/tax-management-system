@@ -30,7 +30,7 @@ const UserDashboard = () => {
     return;
   }
   try {
-    const res = await axios.get("https://tax-management-system-34cb.onrender.com", {
+    const res = await axios.get("https://tax-management-system-34cb.onrender.com/api/profile/", {
       headers: { Authorization: `Token ${token}` },
     });
     setUser(res.data);  // res.data ina user + businesses + payments

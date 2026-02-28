@@ -14,8 +14,10 @@ const Dashboard = () => {
   const fetchStats = async () => {
     try {
       const res = await axios.get(
-        "https://tax-management-system-34cb.onrender.com",
+
+        "https://tax-management-system-34cb.onrender.com/api/dashboard-stats/",
         {
+        
           headers: {
             Authorization: `Token ${token}`,
           },

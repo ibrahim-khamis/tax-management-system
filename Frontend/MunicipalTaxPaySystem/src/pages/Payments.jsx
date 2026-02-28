@@ -21,7 +21,7 @@ const Payments = () => {
   const fetchPayments = async () => {
     try {
       const res = await axios.get(
-        "https://tax-management-system-34cb.onrender.com",
+        "https://tax-management-system-phqf.vercel.app/api/admin-business-status/",
         {
           headers: {
             Authorization: `Token ${token}`,

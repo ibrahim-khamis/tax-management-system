@@ -17,7 +17,7 @@ const Login = () => {
 
     try {
       // API call
-      const res = await axios.post("https://tax-management-system-34cb.onrender.com", {
+      const res = await axios.post("https://tax-management-system-34cb.onrender.com/api/login/", {
         username,
         password,
       });
