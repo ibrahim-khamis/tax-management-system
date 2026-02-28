@@ -29,6 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['tax-management-system-34cb.onrender.com']
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://tax-management-system-phqf.vercel.app",
 ]
 
 
