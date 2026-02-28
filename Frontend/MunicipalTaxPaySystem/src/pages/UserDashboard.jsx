@@ -30,7 +30,7 @@ const UserDashboard = () => {
     return;
   }
   try {
-    const res = await axios.get("http://127.0.0.1:8000/api/profile/", {
+    const res = await axios.get("https://tax-management-system-34cb.onrender.com", {
       headers: { Authorization: `Token ${token}` },
     });
     setUser(res.data);  // res.data ina user + businesses + payments
