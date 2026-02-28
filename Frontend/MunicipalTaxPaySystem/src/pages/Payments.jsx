@@ -21,7 +21,7 @@ const Payments = () => {
   const fetchPayments = async () => {
     try {
       const res = await axios.get(
-        "http://127.0.0.1:8000/api/admin-business-status/",
+        "https://tax-management-system-34cb.onrender.com",
         {
           headers: {
             Authorization: `Token ${token}`,

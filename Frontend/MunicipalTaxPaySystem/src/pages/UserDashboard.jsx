@@ -57,7 +57,7 @@ const UserDashboard = () => {
 
     try {
       await axios.post(
-        "http://127.0.0.1:8000/api/payments/",
+        "https://tax-management-system-34cb.onrender.com/",
         {
           business: business.id,
           amount: parseFloat(amount),
